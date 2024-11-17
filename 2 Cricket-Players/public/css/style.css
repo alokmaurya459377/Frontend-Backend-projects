@@ -1,0 +1,125 @@
+body{
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container{
+  flex: 1;
+}
+
+/* Navbar */
+.navbar{
+  height: 4rem;
+  background-color: white;
+}
+
+.navbar-brand img{
+  height: 40px;
+}
+
+.india{
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.song{
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link{
+  color: #222222 !important;
+  font-weight: 500 !important;
+}
+
+/* footer */
+.f-info-links a{
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover{
+  text-decoration: underline;
+}
+
+.f-info{
+  display: flex;
+  height: 4rem;
+  background-color: #ebebeb;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f-info-socials{
+  font-size: 1.2rem;
+}
+
+.f-info-socials i{
+  margin-right: 0.5rem;
+}
+
+.f-info-links a{
+  margin-right: 1rem;
+}
+
+/* Card */
+.card{
+  border: none !important;
+  margin-bottom: 1.5rem;
+}
+
+.card-img-top{
+  border-radius: 0.8rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body{
+  padding: 5px !important;
+}
+
+.player_link{
+  text-decoration: none;
+}
+
+/* Card overlay */
+.card-img-overlay{
+  opacity: 0;
+}
+.card-img-overlay:hover{
+  opacity: 0.1;
+  background-color: white;
+}
+
+/* New page */
+.sub-btn{
+  background-color: #507ab4 !important;
+  border: none !important;
+  width: 120px;
+}
+
+/* Show image */
+.show-img{
+  height: 80vh;
+  object-fit: contain !important;
+}
+
+.show-div{
+  display: flex;
+  gap: 30px;
+}
+
+.del-btn{
+  background-color: #640808 !important;
+  border: none !important;
+  width: 140px;
+}
+
+/* song */
+.song-color{
+  color: rgb(16, 92, 233);
+}

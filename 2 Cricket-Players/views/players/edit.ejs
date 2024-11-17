@@ -1,0 +1,114 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row mt-3">
+  <div class="col-10 offset-1">
+    <h2>Edit Details</h2>
+    <form action="/players/<%= player._id %>?_method=PUT" method="post" novalidate
+      class="needs-validation">
+      <!-- First-row -->
+      <div class="row">
+        <div class="mb-3 col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input 
+            name="player[name]" 
+            value="<%= player.name %>" 
+            type="text"
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please choose a name.
+          </div>
+        </div>
+        <div class="md-3 col-md-6">
+          <label for="spouse" class="form-label">Spouse</label>
+          <input 
+            name="player[spouse]" 
+            value="<%= player.spouse %>" 
+            type="text"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <!-- Second-row -->
+      <div class="row">
+        <div class="md-3 col-sm-3">
+          <label for="role" class="form-label">Role</label>
+          <input 
+            name="player[role]" 
+            value="<%= player.role %>" 
+            type="text"
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please choose a role.
+          </div>
+        </div>
+        <div class="md-3 col-sm-2">
+          <label for="jersey" class="form-label">Jersey</label>
+          <input 
+            name="player[jersey]" 
+            value="<%= player.jersey %>" 
+            type="number"
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="md-3 col-sm-4">
+          <label for="born" class="form-label">Born</label>
+          <input 
+            name="player[born]" 
+            value="<%= player.born %>" 
+            type="text"
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please provide a valid born.
+          </div>
+        </div>
+        <div class="md-3 col-sm-3">
+          <label for="country" class="form-label">Country</label>
+          <input 
+            name="player[country]" 
+            value="<%= player.country %>" 
+            type="text"
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please select a valid country.
+          </div>
+        </div>
+      </div>
+      <!-- Image -->
+      <div class="md-3">
+        <label for="image" class="form-label">Image</label>
+        <input 
+          name="player[image]" 
+          value="<%= player.image %>" 
+          type="text"
+          class="form-control"
+          required
+        />
+      </div>
+      <button class="btn btn-dark sub-btn mt-3">Submit</button>
+    </form>
+  </div>
+</div>
+  

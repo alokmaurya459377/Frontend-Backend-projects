@@ -1,0 +1,28 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row mt-4">
+  <div class="col-8 offset-2">
+    <h2>Player Details</h2>
+    <div class="show-div mb-4">
+      <div>
+        <img src="<%= player.image %>" class="card-img-top show-img" alt="img"/>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Name : <%= player.name %></p>
+        <p>Spouse : <%= player.spouse %></p>
+        <p>Role : <%= player.role %></p>
+        <p>Jersey No. : <%= player.jersey %></p>
+        <p>Born : <%= player.born %></p>
+        <p>Country : <%= player.country %></p>
+        <a 
+          href="/players/<%= player._id %>/edit" class="btn btn-dark sub-btn">
+          Edit
+        </a>
+      </div>
+      <form action="<%= player._id %>?_method=delete" method="post">
+        <p>Remove Player</p>
+        <button class="btn btn-dark del-btn">Delete</button>
+      </form>
+    </div>
+  </div>
+</div>
+  

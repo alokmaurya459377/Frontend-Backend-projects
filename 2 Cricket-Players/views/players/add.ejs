@@ -1,0 +1,117 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<div class="row mt-3">
+  <div class="col-10 offset-1">
+    <h2>Add Player</h2>
+    <form action="/players" method="post" class="needs-validation" novalidate>
+      <!-- First-row -->
+      <div class="row">
+        <!-- Name -->
+        <div class="mb-3 col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input 
+            name="player[name]" 
+            placeholder="Enter name" 
+            type="text" 
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please choose a name.
+          </div>
+        </div>
+        <!-- Spouse -->
+        <div class="mb-3 col-md-6">
+          <label for="spouse" class="form-label">Spouse</label>
+          <input 
+            name="player[spouse]" 
+            placeholder="Enter spouse" 
+            type="text"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <!-- Second-row -->
+      <div class="row">
+        <!-- Role -->
+        <div class="mb-3 col-sm-3">
+          <label for="role" class="form-label">Role</label>
+          <input 
+            name="player[role]" 
+            placeholder="Yoru role" 
+            type="text"
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please choose a role.
+          </div>
+        </div>
+        <!-- Jersey -->
+        <div class="mb-3 col-sm-2">
+          <label for="jersey" class="form-label">Jersey Number</label>
+          <input 
+            name="player[jersey]"   
+            placeholder="Select no." 
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <!-- Born -->
+        <div class="mb-3 col-sm-4">
+          <label for="born" class="form-label">Born</label>
+          <input 
+            name="player[born]" 
+            placeholder="Enter born" 
+            type="text" 
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please provide a valid born.
+          </div>
+        </div>
+        <!-- Country -->
+        <div class="mb-3 col-sm-3"> 
+          <label for="country" class="form-label">Country</label>
+          <input 
+            name="player[country]" 
+            placeholder="Enter country" 
+            type="text" 
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please select a valid country.
+          </div>
+        </div>
+      </div>
+      
+      <!-- Image -->
+      <div class="mb-3">
+        <label for="image" class="form-label">Image</label>
+        <input  
+          name="player[image]" 
+          placeholder="Enter image/url" 
+          type="text"   
+          class="form-control"
+        />
+      </div>
+      <button class="btn btn-dark sub-btn mt-3">Submit</button>
+    </form>
+  </div>
+</div>

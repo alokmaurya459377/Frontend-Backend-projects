@@ -1,0 +1,21 @@
+<% layout("/layouts/boilerplate") %>
+
+<h2>All Cricketers</h2>
+<!-- <form action="/players/add" method="get">
+  <button>Add Player</button>
+</form> -->
+
+<div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+  <% for(let player of allPlayers) { %>
+    <a href="/players/<%= player._id %>" class="player_link"> 
+      <div class="card col">
+        <img src="<%= player.image %>" class="card-img-top" alt="img" style="height: 20rem;">
+        <div class="card-img-overlay"></div>
+        <div class="card-body">
+          <p class="card-text"><%= player.name %></p>
+        </div>
+      </div>
+    </a>  
+  <% } %>
+</div>
+
